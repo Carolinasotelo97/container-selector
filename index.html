@@ -14,92 +14,90 @@
     }
 
     .container {
-        display: flex; /* Usar flexbox para alinear los elementos */
-        justify-content: space-between; /* Espacio entre las dos secciones */
+        display: flex; 
+        justify-content: space-between; 
         margin: 20px auto;
-        max-width: 1200px; /* Ancho máximo del contenedor */
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+        max-width: 1200px;
+        flex-wrap: wrap;
     }
 
     .fixed-tachos {
-        width: 60%; /* Ancho del contenedor de los tachos estándar */
-        box-sizing: border-box; /* Incluir padding y borde en el ancho total */
-        margin-bottom: 20px; /* Espacio inferior entre secciones */
+        width: 60%; 
+        box-sizing: border-box; 
+        margin-bottom: 20px;
     }
 
     .tacho-standard {
-        width: 30%; /* Ancho de cada tacho estándar */
-        box-sizing: border-box; /* Incluir padding y borde en el ancho total */
-        border-radius: 10px; /* Bordes redondeados */
-        overflow: hidden; /* Para asegurar que la imagen no sobresalga */
-        margin: 5px; /* Espacio entre los tachos */
-        position: relative; /* Para posicionar el texto debajo */
+        width: 30%; 
+        box-sizing: border-box; 
+        border-radius: 10px; 
+        overflow: hidden; 
+        margin: 5px; 
+        position: relative; 
     }
 
     .tacho-image-standard,
     .tacho-image {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-        height: auto; /* Mantiene la proporción de la imagen */
-        border-radius: 10px; /* Bordes redondeados para la imagen */
+        width: 100%; 
+        height: auto;
+        border-radius: 10px; 
     }
 
     .options {
-        display: flex; /* Usar flexbox para alinear en una fila */
-        justify-content: center; /* Centrar los elementos */
-        background-color: #d3d3d3; /* Color de fondo gris */
-        padding: 10px 0; /* Espaciado interno */
-        overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
-        flex-wrap: wrap; /* Permitir que las opciones se envuelvan */
+        display: flex; 
+        justify-content: center; 
+        background-color: #d3d3d3; 
+        padding: 10px 0; 
+        overflow-x: auto; 
+        flex-wrap: wrap; 
     }
 
     .texture-container {
-        width: 80px; /* Ancho fijo para cada textura */
-        margin: 10px; /* Espacio entre las tramas */
-        text-align: center; /* Centrar el texto */
-        cursor: pointer; /* Cambiar el cursor al pasar sobre la textura */
+        width: 80px; 
+        margin: 10px; 
+        text-align: center; 
+        cursor: pointer; 
     }
 
     .texture-circle {
-        width: 80px; /* Ancho del círculo */
-        height: 80px; /* Alto del círculo */
-        border-radius: 50%; /* Círculo */
-        overflow: hidden; /* Para asegurar que la textura no sobresalga */
-        margin: 0 auto; /* Centrar el círculo */
-        display: flex; /* Flex para centrar la imagen */
-        align-items: center; /* Centrar verticalmente */
-        justify-content: center; /* Centrar horizontalmente */
+        width: 80px; 
+        height: 80px; 
+        border-radius: 50%;
+        overflow: hidden; 
+        margin: 0 auto; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
     }
 
     .texture-name {
-        color: #3A3A3A; /* Color del texto */
-        font-weight: bold; /* Negrita */
-        margin-top: 5px; /* Espacio superior */
+        color: #3A3A3A; 
+        font-weight: bold; 
+        margin-top: 5px; 
     }
 
     .custom-tacho {
-        width: 18%; /* Ancho de la sección del tacho personalizado */
-        padding: 5px; /* Reducir el padding */
-        border-radius: 10px; /* Bordes redondeados */
+        width: 18%; 
+        padding: 5px; 
+        border-radius: 10px; 
     }
 
-    /* Estilo para los títulos */
     .section-title {
-        color: green; /* Color verde */
-        font-weight: bold; /* Negrita */
+        color: green; 
+        font-weight: bold; 
     }
 
-    /* Media Queries para Responsividad */
     @media (max-width: 768px) {
         .container {
-            display: flex; /* Usar flexbox para alinear los elementos */
-            justify-content: space-around; /* Espacio entre las dos secciones */
+            display: flex;
+            justify-content: space-around;
             margin: 20px auto;
-            max-width: 1200px; /* Ancho máximo del contenedor */
-            flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+            max-width: 1200px;
+            flex-wrap: wrap;
         }
         .fixed-tachos {
-            width: 100%; /* Hacer que las secciones ocupen el 100% en pantallas pequeñas */
-            margin-bottom: 20px; /* Espacio inferior entre secciones */
+            width: 100%;
+            margin-bottom: 20px; 
         }
         .custom-tacho {
             width: 50%;
@@ -108,40 +106,39 @@
         }
 
         .options {
-            justify-content: space-around; /* Espaciado entre opciones */
+            justify-content: space-around; 
         }
 
         .texture-container {
-            width: 25%; /* Cambiar a 4 opciones por fila en pantallas pequeñas */
+            width: 25%; 
         }
     }
 
     @media (max-width: 480px) {
         .texture-container {
-            width: 40%; /* Ajustar para que quepan 2 o 3 opciones por fila */
+            width: 40%;
         }
     }
 </style>
 </head>
 <body>
 <div class="container">
-    <!-- Columna de Standard -->
     <div class="fixed-tachos">
         <h2 class="section-title">Standard</h2>
         <div style="display: flex; justify-content: space-around;">
             <div class="tacho-standard">
-                <img src="../contenedores/brushed-nickel-standard.png" alt="Tacho Standard 1" class="tacho-image-standard">
+                <img src="brushed-nickel-standard.png" alt="Tacho Standard 1" class="tacho-image-standard">
             </div>
             <div class="tacho-standard">
-                <img src="../contenedores/standard-black.png" alt="Tacho Standard 2" class="tacho-image-standard">
+                <img src="standard-black.png" alt="Tacho Standard 2" class="tacho-image-standard">
             </div>
             <div class="tacho-standard">
-                <img src="../contenedores/standard-brown.png" alt="Tacho Standard 3" class="tacho-image-standard">
+                <img src="standard-brown.png" alt="Tacho Standard 3" class="tacho-image-standard">
             </div>
         </div>
     </div>
 
-    <!-- Columna de Custom -->
+
     <div class="custom-tacho">
         <h2 class="section-title">Custom</h2>
         <img src="./front-angle/custom.png" alt="Tacho Personalizado" id="customTacho" class="tacho-image">
@@ -150,75 +147,75 @@
 
 <h2 class="section-title">Premium</h2>
 <div class="options">
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/evolution-ebony.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/evolution-ebony.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/ebony.png" alt="Ebony" style="width: 100%; height: auto;">
+            <img src="./tramas/ebony.png" alt="Ebony" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Ebony</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/evolution-dark-roast.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/evolution-dark-roast.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/evolution-dark-roast.png" alt="Dark Roast" style="width: 100%; height: auto;">
+            <img src="./tramas/evolution-dark-roast.png" alt="Dark Roast" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Dark Roast</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/evolution-ivory.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/evolution-ivory.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/ivory.png" alt="Ivory" style="width: 100%; height: auto;">
+            <img src="./tramas/ivory.png" alt="Ivory" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Ivory</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/retro-grey.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/retro-grey.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/retro-grey.png" alt="Retro Grey Stucco" style="width: 100%; height: auto;">
+            <img src="./tramas/retro-grey.png" alt="Retro Grey Stucco" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Retro Grey Stucco</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/vintage-brick.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/vintage-brick.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/vintage-brick.png" alt="Vintage Brick" style="width: 100%; height: auto;">
+            <img src="./tramas/vintage-brick.png" alt="Vintage Brick" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Vintage Brick</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/old-school-mix.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/old-school-mix.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/old-school-mix-1.png" alt="Old School Mix" style="width: 100%; height: auto;">
+            <img src="./tramas/old-school-mix-1.png" alt="Old School Mix" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Old School Mix</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/urban-loft.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/urban-loft.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/urban-loft.png" alt="Urban Loft" style="width: 100%; height: auto;">
+            <img src="./tramas/urban-loft.png" alt="Urban Loft" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Urban Loft</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/stacked-ledge-rock.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/stacked-ledge-rock.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/stack-ladge-rock.png" alt="Stack Ledge Rock" style="width: 100%; height: auto;">
+            <img src="./tramas/stack-ladge-rock.png" alt="Stack Ledge Rock" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Stack Ledge Rock</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/walnut-plank.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/walnut-plank.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/walnut-plank.png" alt="Walnut Plank" style="width: 100%; height: auto;">
+            <img src="./tramas/walnut-plank.png" alt="Walnut Plank" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Walnut Plank</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/white-washed-plank.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/white-washed-plank.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/white-washed-plank.png" alt="White Washed Plank" style="width: 100%; height: auto;">
+            <img src="./tramas/white-washed-plank.png" alt="White Washed Plank" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">White Washed Plank</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/mocha-slate.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/mocha-slate.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/mocha-slate.png" alt="Mocha Slate" style="width: 100%; height: auto;">
+            <img src="./tramas/mocha-slate.png" alt="Mocha Slate" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">Mocha Slate</div>
     </div>
-    <div class="texture-container" onclick="updateCustomTacho('../contenedores/front-angle/white-harringbone.png')">
+    <div class="texture-container" onclick="updateCustomTacho('./front-angle/white-harringbone.png')">
         <div class="texture-circle">
-            <img src="../contenedores/tramas/white-harringbone.png" alt="White Harringbone" style="width: 100%; height: auto;">
+            <img src="./tramas/white-harringbone.png" alt="White Harringbone" style="width: 100%; height: auto;">
         </div>
         <div class="texture-name">White Harringbone</div>
     </div>
@@ -227,7 +224,6 @@
 <script>
     function updateCustomTacho(imagePath) {
         const customTacho = document.getElementById('customTacho');
-        // Cambiar la imagen del tacho personalizado
         customTacho.src = imagePath;
     }
 </script>
